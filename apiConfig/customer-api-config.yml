@@ -1,0 +1,50 @@
+version: 0.0.1   
+apimServiceName: Microservice-Governance-Demo-API   
+apiVersionSets:   
+  - id: cumVersionSetID
+    displayName: Customer Domain
+    description: This api set include both consumer and provider sides apis. 
+                 Business Unit - Platform Architecture. 
+                 Contact - platform@ing.com.au
+    versioningScheme: Query
+    versionQueryName: versionQuery
+    versionHeaderName: versionHeader
+apis:
+  - name: Customer-Management-Provider
+    type: http  
+    displayName: Customer management domain API
+    description: Customer management domain system, which includes CRUD operations.
+    # serviceUrl: Absolute URL of the backend service implementing this API.
+    openApiSpec: C:\Dev\Projects\TinyBank\tinybankcustomer\api\customer-openapi.json    
+    openApiSpecFormat: OpenApi30_Json
+    policy: C:\Dev\Projects\TinyBank\tinybankcustomer\apiConfig\apiPolicyHeaders.xml   # Optional, can be url or local file
+    suffix: cum  # Required
+    apiVersion: V0.1-REST-Provider   # Optional
+    apiVersionDescription: initial version   # Optional
+    apiVersionSetId: cumVersionSetID
+    revision: 1   # Optional
+    revisionDescription: initial revision   # Optional
+    operations:   # Optional
+      getCustomers: # Must match the operationId property of a path's operations
+        policy: C:\Dev\Projects\TinyBank\tinybankcustomer\apiConfig\operationRateLimit.xml   # Optional, can be url or local file
+      getCustomerByID:  # Must match the operationId property of a path's operations
+        policy: C:\Dev\Projects\TinyBank\tinybankcustomer\apiConfig\operationRateLimit.xml   # Optional, can be url or local file
+      createCustomer: # Must match the operationId property of a path's operations
+        policy: C:\Dev\Projects\TinyBank\tinybankcustomer\apiConfig\operationRateLimit.xml   # Optional, can be url or local file
+      updateCustomer:  # Must match the operationId property of a path's operations
+        policy: C:\Dev\Projects\TinyBank\tinybankcustomer\apiConfig\operationRateLimit.xml   # Optional, can be url or local file
+      deleteCustomer:  # Must match the operationId property of a path's operations
+        policy: C:\Dev\Projects\TinyBank\tinybankcustomer\apiConfig\operationRateLimit.xml   # Optional, can be url or local file
+    authenticationSettings:   # Optional
+      subscriptionKeyRequired: false
+      #oAuth2:
+      #    authorizationServerId: apimgmtaad
+      #    scope: scope
+    products: starter    # Optional, adds api to the specified products
+#tags:
+#    - contractType: provider
+#    - protocolType: rest
+#    - contactPerson: Songqing.gu@ing.com.au
+outputLocation: C:\Dev\Projects\TinyBank\tinybankcustomer\api   # Required, folder the creator will write the templates to
+linked: true   # Optional
+linkedTemplatesBaseUrl : https://servicemeshstorage.blob.core.windows.net/customer-api-templates/api  # Required if 'linked' property is set to true

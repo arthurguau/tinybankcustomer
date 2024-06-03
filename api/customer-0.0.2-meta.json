@@ -1,0 +1,19 @@
+{
+	"version": "0.0.1",
+	"name": "Customer Management Domain Service",
+	"description": "An API showcase demonstrating how to automatically generate an openapi spec and client based on this.",
+	"createdBy": "",
+	"createdOn": "2022-11-12T00:27:15+0000",
+	"type": "OPENAPI",
+	"globalId": 1,
+	"state": "ENABLED",
+	"id": "customer-domain",
+	"labels": [
+		"Account"
+	],
+	"properties": {
+		"Lifecycle": "Design"
+	},
+	"groupId": "OB",
+	"contentId": 1
+}
