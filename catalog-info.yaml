@@ -11,5 +11,5 @@ spec:
   lifecycle: production
   owner: guests
   system: core-system
-  definition:
-    $openapi: ./api/customer-openapi-0.0.1.yaml
+  providesApis:
+    - tinybank-customer-api
