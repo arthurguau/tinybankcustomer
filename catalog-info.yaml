@@ -13,3 +13,4 @@ spec:
   system: core-system
   providesApis:
     - tinybank-customer-api
+    
