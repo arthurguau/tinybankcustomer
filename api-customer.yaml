@@ -8,4 +8,4 @@ spec:
   lifecycle: production
   owner: user:guest
   definition:
-    $openapi: api/customer-openapi-0.0.1.yaml
+    $text: ./api/customer-openapi-0.0.1.json
