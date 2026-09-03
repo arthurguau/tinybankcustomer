@@ -12,4 +12,4 @@ spec:
   owner: guests
   system: core-system
   definition:
-    $openapi: ./api/*openapi*.yaml
+    $openapi: ./api/customer-openapi-0.0.1.yaml
