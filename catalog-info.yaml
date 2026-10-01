@@ -1,6 +1,9 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
+  annotations:
+    backstage.io/kubernetes-id: tinybank-customer
+    # backstage.io/kubernetes-label-selector: app=tinybank-customer
   name: tinybank-customer
   description: A sample microservice catalogued in Backstage.
   annotations:
