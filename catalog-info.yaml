@@ -4,6 +4,7 @@ metadata:
   annotations:
     github.com/project-slug: backstage/backstage
     backstage.io/techdocs-ref: dir:.
+    backstage.io/kubernetes-id: tinybankcustomer
   name: tinybankcustomer
   description: A sample microservice catalogued in Backstage.
 spec:
