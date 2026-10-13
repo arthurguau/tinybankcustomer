@@ -13,4 +13,5 @@ spec:
   system: core-system
   providesApis:
     - tinybank-customer-api
-    
+  dependsOn:
+    - component:postgres-customer

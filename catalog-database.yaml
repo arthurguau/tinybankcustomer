@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: postgres-customer
+  description: Database used for the tinybank application. It is a PostgreSQL database that stores customer information.
+spec:
+  type: database
+  lifecycle: production
+  owner: guests
