@@ -1,0 +1,47 @@
+{
+    "asyncapi": "2.6.0",
+    "info": {
+        "title": "User Events Service",
+        "version": "1.0.0",
+        "description": "Kafka event streams defined with Avro schemas"
+    },
+    "channels": {
+        "user.created": {
+            "publish": {
+                "message": {
+                    "$ref": "#/components/messages/UserCreatedMessage"
+                }
+            }
+        }
+    },
+    "components": {
+        "messages": {
+            "UserCreatedMessage": {
+                "name": "UserCreated",
+                "title": "User Created",
+                "summary": "Published when a new user is created",
+                "schemaFormat": "application/vnd.apache.avro;version=1.9.0",
+                "payload": {
+                    "type": "record",
+                    "name": "UserCreated",
+                    "namespace": "com.ing.tinybank.events",
+                    "doc": "Schema representing a user creation event",
+                    "fields": [
+                        {
+                            "name": "userId",
+                            "type": "int"
+                        },
+                        {
+                            "name": "userName",
+                            "type": "string"
+                        },
+                        {
+                            "name": "createdAt",
+                            "type": "long"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -18,5 +18,6 @@ spec:
   system: core-system
   providesApis:
     - tinybank-customer-api
+    - tinybank-customer-event-api
   dependsOn:
     - component:postgres-customer

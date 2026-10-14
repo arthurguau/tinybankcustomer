@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: tinybank-customer-event-api
+  description: AsyncAPI specification for customer Kafka events using Avro schemas
+  namespace: default
+spec:
+  type: asyncapi
+  lifecycle: production
+  owner: guest
+  definition:
+    $text: ./api/asyncapi.json
+  dependsOn:
+    - resource: customer-event-topic

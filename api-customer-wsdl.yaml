@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: tinybank-customer-api
+  description: ING Platorm Tinybank Customer REST API
+spec:
+  type: wsdl
+  lifecycle: production
+  owner: user:guest
+  definition:
+    $text: ./api/GlobalWeather.wsdl
