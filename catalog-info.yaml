@@ -12,7 +12,6 @@ metadata:
     - springboot
     - domain
 spec:
-spec:
   type: service
   lifecycle: production
   owner: guests
