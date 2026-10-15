@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: tinybank
+  description: The core system managing customer and account information for the Tinybank application.
+  tags:
+    - critical
+    - banking system
+spec:
+  owner: group:platform-team
+  domain: platform-architecture
