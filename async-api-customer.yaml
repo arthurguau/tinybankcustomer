@@ -11,4 +11,4 @@ spec:
   definition:
     $text: ./api/asyncapi.json
   dependsOn:
-    - resource: customer-event-topic
+    - resource:customer-event-topic
