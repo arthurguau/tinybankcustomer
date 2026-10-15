@@ -5,7 +5,7 @@ metadata:
   description: The core system managing customer and account information for the Tinybank application.
   tags:
     - critical
-    - banking system
+    - banking-system
 spec:
   owner: group:platform-team
   domain: platform-architecture
