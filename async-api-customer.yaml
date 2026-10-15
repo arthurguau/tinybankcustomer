@@ -7,7 +7,7 @@ metadata:
 spec:
   type: asyncapi
   lifecycle: production
-  owner: user:guest
+  owner: group:platform-team
   system: tinybank
   definition:
     $text: ./api/asyncapi.json

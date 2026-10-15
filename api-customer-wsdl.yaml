@@ -7,6 +7,6 @@ spec:
   type: wsdl
   lifecycle: production
   system: DG
-  owner: user:guest
+  owner: group:platform-tribe
   definition:
     $text: ./api/GlobalWeather.wsdl
