@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: dg
+  description: The core system managing direct gateway for the Tinybank application.
+  tags:
+    - critical
+    - banking-system
+spec:
+  owner: group:platform-tribe
+  domain: Direct-Gateway

@@ -6,6 +6,7 @@ metadata:
 spec:
   type: wsdl
   lifecycle: production
+  system: DG
   owner: user:guest
   definition:
     $text: ./api/GlobalWeather.wsdl
