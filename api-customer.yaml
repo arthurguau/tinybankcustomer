@@ -7,5 +7,6 @@ spec:
   type: openapi
   lifecycle: production
   owner: user:guest
+  system: tinybank
   definition:
     $text: ./api/customer-openapi-0.0.1.json

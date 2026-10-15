@@ -8,6 +8,7 @@ spec:
   type: asyncapi
   lifecycle: production
   owner: user:guest
+  system: tinybank
   definition:
     $text: ./api/asyncapi.json
   dependsOn:
